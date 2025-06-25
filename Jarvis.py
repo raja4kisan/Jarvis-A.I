@@ -27,7 +27,7 @@ def search_youtube(query):
         "part": "snippet",
         "q": query,
         "type": "video",  # Restricting search to videos
-        "key": "AIzaSyCWidS7as0E6eJFi9MlYHaebqIRv-OoGTU" , # Replace with your actual YouTube API key
+        "key": "" , # Replace with your actual YouTube API key
     }
 
     response = requests.get(url, params=params)
@@ -89,7 +89,7 @@ def display_news(api_key):
         print('Failed to retrieve news.')
 
 # Replace 'your_api_key_here' with your actual NewsAPI key.
-api_key ='efa1aba69e91444b893a98ba64c6ad09'
+api_key =''
 
 
 def get_weather(api_key, city):
@@ -102,7 +102,7 @@ def get_weather(api_key, city):
         return None
 
 def main():
-    api_key = '371f05d3fcc143ffa9e170125241203'  # Make sure this is correct and active
+    api_key = ''  # Make sure this is correct and active
     city = 'New Delhi'
     weather_data = get_weather(api_key, city)
     if weather_data:
